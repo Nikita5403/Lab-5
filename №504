@@ -1,0 +1,14 @@
+def is_anagram(a: str, b: str) -> bool:
+    clean_a = ''.join(ch.lower() for ch in a if ch.isalpha())
+    clean_b = ''.join(ch.lower() for ch in b if ch.isalpha())
+    return sorted(clean_a) == sorted(clean_b)
+print("Checking anagrams (Enter to exit)\n")
+while True:
+    a = input("Enter the first word: ")
+    if a == "":
+        break
+    b = input("Enter the second word: ")
+    if b == "":
+        break
+    print(is_anagram(a, b))
+    print()

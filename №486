@@ -1,0 +1,7 @@
+for _ in range(2):
+    print("Enter a b c:")
+    a, b, c = map(int, input().split())
+    array_3d = [[[0 for _ in range(c)] for _ in range(b)] for _ in range(a)]
+    print("Result:")
+    for layer in array_3d:
+        print(layer)

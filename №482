@@ -1,0 +1,6 @@
+s = input("Enter numbers: ")
+parts = s.split()
+head = parts.pop(0)
+tail = " ".join(parts)
+print(f"Head : {head}")
+print(f"Tail : {tail}")

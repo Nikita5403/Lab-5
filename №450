@@ -1,0 +1,10 @@
+print("Enter integers separated by spaces:")
+nums = list(map(int, input().split()))
+print("Pairs with the same sign:")
+found = False
+for i in range(len(nums) - 1):
+    if nums[i] * nums[i+1] > 0:
+        print(nums[i], nums[i+1])
+        found = True
+if not found:
+    print("No pairs found.")

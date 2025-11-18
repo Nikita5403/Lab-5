@@ -1,0 +1,11 @@
+print("Enter integers one per line:")
+numbers = []
+total = 0
+while True:
+    x = int(input())
+    numbers.append(x)
+    total += x
+    if total == 0:
+        break
+squares_sum = sum(n*n for n in numbers)
+print(f"Result: {squares_sum}")
